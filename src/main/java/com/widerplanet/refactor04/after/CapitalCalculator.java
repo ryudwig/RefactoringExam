@@ -7,6 +7,14 @@ public class CapitalCalculator {
     private double _income = 0.0;
     private final double ADJ_FACTOR = 2.0;
 
+    public void setIntRate(double _intRate) {
+        this._intRate = _intRate;
+    }
+
+    public void setCapital(double _capital) {
+        this._capital = _capital;
+    }
+
     public double getAdjustedCapital() {
         double result = 0.0;
         if (_capital <= 0.0) return result;
