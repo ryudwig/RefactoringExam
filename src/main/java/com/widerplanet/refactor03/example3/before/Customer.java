@@ -20,12 +20,12 @@ public class Customer {
         return _name;
     }
 
-    public String getStatement(String format){
+    public String getStatement(char format){
 
         switch(format){
-            case "html":
+            case 'H':
                 return htmlStatement();
-            case "text":
+            case 'T':
                 return textStatement();
             default:
                 return "";
